@@ -18,7 +18,7 @@ The project implements automated tests for core Yandex.Disk resources using the 
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone [your-repository-link]
+   git clone https://github.com/Hattaeck/yandex-disk-api-tests
 2. Open the project in your IDE (IntelliJ IDEA recommended).
 3. To run the tests via command line, use:
    mvn test
