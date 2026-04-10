@@ -8,7 +8,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.yandex.disk.Endpoints;
-
 import static io.restassured.RestAssured.given;
 
 public class DiskApiTest {
@@ -97,7 +96,7 @@ public class DiskApiTest {
     }
 
     @Test
-    @DisplayName("401: Плохой токен")
+    @DisplayName("401: Невалидный токен")
     public void testInvalidToken() {
         given().baseUri("https://cloud-api.yandex.net/").header("Authorization", "OAuth XXX").when().get(Endpoints.DISK).then().statusCode(401);
     }
